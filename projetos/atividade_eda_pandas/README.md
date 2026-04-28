@@ -1,21 +1,21 @@
-# 🚀 Título do Projeto (Nome do Repositório)
+# Análise de Dados com Pandas
 
-Breve descrição de uma frase sobre o que este projeto faz ou qual problema ele resolve.
+Este projeto demonstra a aplicação prática da biblioteca Pandas para resolver problemas de manipulação e limpeza de dados.
 
-## 📌 Sobre o Projeto
-Uma explicação um pouco mais detalhada sobre o contexto, por que você o criou e qual o seu objetivo principal.
+## Sobre o Projeto
+O objetivo principal é transformar dados brutos em insights. Foi desenvolvido um fluxo de trabalho que engloba desde a leitura de ficheiros CSV/Excel até à agregação de dados para relatórios estatísticos simples.
 
 ## 🛠️ Tecnologias e Ferramentas
-* **Linguagem:** Ex: Python, JavaScript, SQL
-* **Bibliotecas/Frameworks:** Ex: Pandas, React, Flask
-* **Ferramentas:** Ex: VS Code, Git, Docker
+* **Linguagem:** Python
+* **Bibliotecas:** Pandas
+* **Ferramentas:** VS Code / GitBash
 
-## 📂 Estrutura de Arquivos
-* `nome_do_arquivo.py`: Descrição do que este arquivo faz.
-* `pasta/`: Descrição do conteúdo da pasta.
-* `README.md`: Documentação.
+## 📂 Estrutura de Ficheiros
+* **`analise_pandas.py`**: Script contendo a lógica de limpeza e filtragem.
+* **`README.md`**: Documentação detalhada do projeto.
 
 ## ⚙️ Como Executar
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+1. Certifique-se de que tem o Python instalado.
+2. Instale a biblioteca necessária: `pip install pandas`.
+3. Clone o repositório e navegue até esta pasta.
+4. Execute o comando: `python analise_pandas.py`.
