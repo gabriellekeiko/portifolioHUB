@@ -9,3 +9,8 @@ Estes exercícios foram realizados como parte da minha formação acadêmica no 
 * **Linguagem:** Python 
 * **IDE:** Spyder (Ambiente de Desenvolvimento Científico)
 * **Versionamento:** Git & GitHub
+
+## Estrutura de Ficheiros
+
+* **`exercicios de seleção - Python`**: Script contendo a resolução de problemas utilizando estruturas condicionais para tomada de decisão.
+* **`README.md`**: Documentação detalhada com o contexto acadêmico e instruções técnicas desta seção.
