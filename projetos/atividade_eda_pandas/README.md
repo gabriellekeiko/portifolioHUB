@@ -5,7 +5,7 @@ Este projeto demonstra a aplicação prática da biblioteca Pandas para resolver
 ## Sobre o Projeto
 O objetivo principal é transformar dados brutos em insights. Foi desenvolvido um fluxo de trabalho que engloba desde a leitura de ficheiros CSV/Excel até à agregação de dados para relatórios estatísticos simples.
 
-## 🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 * **Linguagem:** Python
 * **Bibliotecas:** Pandas
 * **Ferramentas:** VS Code / GitBash
