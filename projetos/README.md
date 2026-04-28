@@ -1,10 +1,10 @@
-# 🚀 portfolioHUB | Gabrielle Keiko
+# portfolioHUB | Gabrielle Keiko
 
 Bem-vindo ao meu repositório central de projetos. Este ecossistema foi desenvolvido como parte do **Bootcamp 1** no **CEUB**, com o objetivo de consolidar minha trajetória acadêmica e competências técnicas em Ciência de Dados e Machine Learning.
 
-## 📂 Estrutura do Repositório
+## Estrutura do Repositório
 
-Conforme as diretrizes de organização, o repositório está dividido nas seguintes seções:
+Conforme as diretrizes de organização, o repositório contêm as seguintes habilidades:
 
 **[analise-pandas]:** Contém projetos focados em manipulação de dados, limpeza e análise exploratória utilizando a biblioteca Pandas em Python.
 **[projetos-academicos]:** Repositório de códigos e exercícios desenvolvidos durante as disciplinas do curso de Ciência de Dados no CEUB.
