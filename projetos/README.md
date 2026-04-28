@@ -6,16 +6,16 @@ Bem-vindo ao meu repositório central de projetos. Este ecossistema foi desenvol
 
 Conforme as diretrizes de organização, o repositório contêm as seguintes habilidades:
 
-**[analise-pandas]:** Contém projetos focados em manipulação de dados, limpeza e análise exploratória utilizando a biblioteca Pandas em Python.
-**[projetos-academicos]:** Repositório de códigos e exercícios desenvolvidos durante as disciplinas do curso de Ciência de Dados no CEUB.
-**[documentacao]:** Arquivos de suporte, como os slides de habilidades e competências técnicas.
+* **[analise-pandas]:** Contém projetos focados em manipulação de dados, limpeza e análise exploratória utilizando a biblioteca Pandas em Python.
+* **[projetos-academicos]:** Repositório de códigos e exercícios desenvolvidos durante as disciplinas do curso de Ciência de Dados no CEUB.
+* **[documentacao]:** Arquivos de suporte, como os slides de habilidades e competências técnicas.
 
 ## Tecnologias e Ferramentas
 
 Para o desenvolvimento deste portfólio e dos projetos contidos, utilizo:
-**Versionamento:** Git e GitHub.
-**Publicação:** GitHub Pages para hospedagem do site estático.
-**Linguagens:** Python (Pandas), HTML, CSS, SQL.
+* **Versionamento:** Git e GitHub.
+* **Publicação:** GitHub Pages para hospedagem do site estático.
+* **Linguagens:** Python (Pandas), HTML, CSS, SQL.
 
 ## Integração Profissional
 
