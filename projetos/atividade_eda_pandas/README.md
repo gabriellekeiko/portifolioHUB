@@ -20,8 +20,9 @@ Para executar este projeto localmente, siga os passos abaixo:
 Certifique-se de ter o **Python 3.x** instalado em sua máquina. Recomenda-se o uso do ambiente **Anaconda** (que já inclui o Spyder e Jupyter) ou o **VS Code**.
 ### 2. Instalação de Dependências
 Este projeto utiliza a biblioteca **Pandas**. Se você não a possui, instale-a via terminal/prompt de comando:
-```bash - pip install pandas numpy
-
+- bash 
+- pip install pandas numpy
+```
 ## Autoria
 Este projeto foi desenvolvido por:
 * **Gabrielle Keiko**
