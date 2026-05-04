@@ -39,6 +39,6 @@ O repositório está organizado por módulos de competência para facilitar a na
 
 ## Conecte-se Comigo
 
-* **LinkedIn:** [Seu Perfil Aqui](www.linkedin.com/in/gabrielle-keiko-9baa6a2b3)
-* **Site do Portfólio:** [Visualize meu projeto online](https://gabriellekeiko.github.io/portifolioHUB/)
+* **LinkedIn:**(www.linkedin.com/in/gabrielle-keiko-9baa6a2b3)
+* **Site do Portfólio:**(https://gabriellekeiko.github.io/portifolioHUB/)
 
