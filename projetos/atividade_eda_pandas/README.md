@@ -29,4 +29,4 @@ Este projeto foi desenvolvido por:
   * Aluna de Ciência de Dados e Machine Learning no **CEUB**
   * Introdução a de Ciência de Dados 2026
   * E-mail institucional: gabrielle.keiko@sempreceub.com | E-mail pessoal: gkeiko.05@gmail.com
-  * [Meu Perfil no LinkedIn](https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3/))
+  * Meu Perfil no LinkedIn: https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3/
