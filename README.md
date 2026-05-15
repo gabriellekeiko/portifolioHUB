@@ -7,38 +7,60 @@ O objetivo deste HUB é demonstrar competências práticas em versionamento de c
 
 ---
 
-## Estrutura do Repositório
-
-O repositório está organizado por módulos de competência para facilitar a navegação:
-
-### Fundamentos de Python (Lógica)
-* **[/exercicios-selecao](./projetos/selecao):** Exercícios de estruturas condicionais (`if`, `else`).
-* **[/exercicios-while](./projetos/while):** Estruturas de repetição controladas por condição.
-* **[/exercicios-for](./projetos/for):** Iterações sobre sequências e listas.
-
-### Análise de Dados
-* **[/atividade-pandas](./projetos/atividade_eda_pandas):** Análise exploratória de dados (EDA), limpeza e transformação com a biblioteca Pandas.
-
-### Web & Documentação
-* **`index.html`**: Meu site de portfólio hospedado via **GitHub Pages**.
-* **[/documentacao](./documentacao):** Slides, PDFs de entrega e certificados.
+## Objetivo do Projeto
+Este repositório foi construído para demonstrar competências em:
+* **Engenharia de Dados & ETL:** Limpeza e transformação de grandes volumes de dados.
+* **Lógica de Programação:** Automação de processos e algoritmos estruturados.
+* **Documentação Técnica:** Escrita clara e orientada a processos.
+* **Cloud & Web:** Hospedagem e publicação de interfaces via GitHub Pages.
 
 ---
 
-## Stack Tecnológica
+## Arquitetura do Repositório
 
-| Tecnologia | Aplicação |
+O repositório está organizado em módulos de competência para facilitar a navegação:
+
+### [Ecossistema de Projetos](./Projetos)
+Nesta seção, centralizo todas as soluções práticas desenvolvidas. Aqui, o foco sai da teoria e entra na execução. Você encontrará desde scripts de automação até pipelines de dados complexos. Cada subpasta dentro deste diretório contém sua própria documentação técnica detalhada, explicando o "porquê" de cada linha de código.
+
+### [Certificações e Conquistas](./Certificados)
+Acredito na aprendizagem contínua (*Lifelong Learning*). Esta pasta reúne as evidências formais da minha evolução, contendo certificados de cursos complementares, workshops e maratonas de programação que moldaram meu conhecimento atual.
+
+### [Apresentações e Soft Skills](./Slides)
+Um cientista de dados precisa saber contar histórias. Aqui, disponibilizo os **Slides de Habilidades** e apresentações executivas que utilizei para defender meus projetos. Estes materiais demonstram minha capacidade de traduzir termos técnicos para uma linguagem de negócios e impacto.
+
+### [Interface e Experiência (HTML/CSS)](./HTML_Portfolio)
+O código por trás da interface. Este módulo contém a estruturação em HTML e a estilização em CSS que dão vida ao meu portfólio web. É onde a técnica se une ao design para criar uma experiência de usuário intuitiva e profissional.
+
+---
+
+## Meu Toolkit Tecnológico
+
+* **Linguagem Core:** Python (com foco em processamento científico no Spyder).
+* **Data Science:** Manipulação avançada com Pandas e Numpy.
+* **Web Stack:** Estruturação semântica em HTML5 e design responsivo com CSS3.
+* **Versionamento:** Gestão de repositórios com Git, utilizando boas práticas de Commits e Branching.
+
+---
+
+## Tech Stack
+
+| Categoria | Tecnologia |
 | :--- | :--- |
-| **Python** | Linguagem principal para análise e lógica. |
-| **Pandas** | Manipulação e tratamento de bases de dados. |
-| **Spyder / Jupyter** | Ambientes de desenvolvimento e experimentação. |
-| **Git & GitHub** | Versionamento e gestão de diretórios. |
-| **HTML/CSS** | Estruturação do site pessoal. |
+| **Linguagens** | Python 3.11+, HTML5, CSS3 |
+| **Análise de Dados** | Pandas, NumPy, JSON |
+| **Ferramentas** | Spyder IDE, Jupyter Notebook, VS Code |
+| **Versionamento** | Git & GitHub Flow |
 
 ---
 
-## Conecte-se Comigo
+## Autoria e Contato
 
-* **LinkedIn:**(www.linkedin.com/in/gabrielle-keiko-9baa6a2b3)
-* **Site do Portfólio:**(https://gabriellekeiko.github.io/portifolioHUB/)
+Estou sempre em busca de novos desafios e trocas de conhecimento. Se você se interessou pelo meu trabalho ou deseja discutir sobre tecnologia e dados, sinta-se à vontade para se conectar comigo:
 
+* 💼 **LinkedIn:** [Acesse meu perfil profissional](https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3/)
+* 📧 **E-mail:** gabrielle.keiko@sempreceub.com | gkeiko.05@gmail.com
+* 🌐 **Live Version:** [Veja meu portfólio em tempo real](https://gabriellekeiko.github.io/portifolioHUB/)
+
+---
+> *"Dados são o novo petróleo, mas o refinamento é o que gera valor."*
