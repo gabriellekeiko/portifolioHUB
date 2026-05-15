@@ -44,6 +44,11 @@ Práticas de iteração sobre sequências e uso intensivo da função `range()`.
 4. Utilize o **Variable Explorer** do Spyder para acompanhar o estado das variáveis durante o fluxo.
 
 ---
-## 👤 Desenvolvido por
-**Gabrielle Keiko**
-*Aluna de Ciência de Dados — CEUB 2026*
+```
+## Autoria
+Este projeto foi desenvolvido por:
+* **Gabrielle Keiko**
+  * Aluna de Ciência de Dados e Machine Learning no **CEUB**
+  * Lógica de Programação 2026
+  * E-mail institucional: gabrielle.keiko@sempreceub.com | E-mail pessoal: gkeiko.05@gmail.com
+  * Meu Perfil no LinkedIn: https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3/
