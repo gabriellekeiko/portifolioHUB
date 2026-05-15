@@ -25,7 +25,6 @@ A lógica de seleção permite que o programa execute diferentes blocos de códi
 4. Caso o programa solicite uma entrada (ex: "Digite sua idade"), responda diretamente no console à direita para ver a resposta do algoritmo.
 
 ---
-´´´
 ## Autoria
 Este projeto foi desenvolvido por:
 * *Gabrielle Keiko*
