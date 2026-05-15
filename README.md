@@ -29,7 +29,7 @@ Acredito na aprendizagem contínua (*Lifelong Learning*). Esta pasta reúne as e
 ### [Apresentações e Soft Skills](./Portifólio profissional (slides).pdf)
 Um cientista de dados precisa saber contar histórias. Aqui, disponibilizo os **Slides de Habilidades** e apresentações executivas que utilizei para defender meus projetos. Estes materiais demonstram minha capacidade de traduzir termos técnicos para uma linguagem de negócios e impacto.
 
-### [Interface e Experiência (HTML/CSS)](./HTML_Portfolio)
+### [Interface e Experiência (HTML/CSS)](./index.html)
 O código por trás da interface. Este módulo contém a estruturação em HTML e a estilização em CSS que dão vida ao meu portfólio web. É onde a técnica se une ao design para criar uma experiência de usuário intuitiva e profissional.
 
 ---
