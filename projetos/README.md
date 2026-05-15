@@ -48,7 +48,7 @@ Sinta-se à vontade para explorar os códigos e entrar em contato para colabora�
 * **LinkedIn:** [Gabrielle Keiko](https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3/)
 * **Portfólio Web:** [Visualizar Interface Live](https://gabriellekeiko.github.io/portifolioHUB/)
 * **E-mail Institucional:** `gabrielle.keiko@sempreceub.com`
-* **E-mail Pessoal:** `gkeiko.05@gamil.com`
+* **E-mail Pessoal:** `gkeiko.05@gmail.com`
 
 ---
 > **Nota Acadêmica:** Este portfólio integra o Desafio Intermediário do Bootcamp CEUB 2026, validando competências de Nível Intermediário em Versionamento e Ciência de Dados.
