@@ -20,7 +20,7 @@ Este repositório foi construído para demonstrar competências em:
 
 O repositório está organizado em módulos de competência para facilitar a navegação:
 
-### [Ecossistema de Projetos](./Projetos)
+### [Ecossistema de Projetos](./projetos)
 Nesta seção, centralizo todas as soluções práticas desenvolvidas. Aqui, o foco sai da teoria e entra na execução. Você encontrará desde scripts de automação até pipelines de dados complexos. Cada subpasta dentro deste diretório contém sua própria documentação técnica detalhada, explicando o "porquê" de cada linha de código.
 
 ### [Certificações e Conquistas](./Certificados)
