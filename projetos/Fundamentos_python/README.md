@@ -1,6 +1,6 @@
 # Fundamentos de Programação em Python
 
-Este diretório centraliza os exercícios práticos desenvolvidos durante o **Bootcamp de Ciência de Dados (CEUB)** utilizando a IDE **Spyder**. O objetivo desta seção é consolidar o domínio da sintaxe Python e a lógica de controle de fluxo.
+Este diretório centraliza os exercícios práticos desenvolvidos utilizando a IDE **Spyder**. O objetivo desta seção é consolidar o domínio da sintaxe Python e a lógica de controle de fluxo.
 
 ## Objetivos de Aprendizagem
 * Compreensão de tipos de dados e variáveis.
