@@ -19,7 +19,7 @@ O objetivo desta atividade é realizar uma análise exploratória e tratamento d
 * **Biblioteca Principal:** Pandas
 * **Ambiente:** VS code / Google Colab / Git Bash
 
-## ⚙️ Instruções de Execução
+## Instruções de Execução
 1. Certifique-se de que o ficheiro de dados `emendas_transformadas.json` está na mesma pasta que o notebook.
 2. Instale as dependências necessárias:
 - bash
