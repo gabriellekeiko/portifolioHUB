@@ -17,12 +17,12 @@ O foco destas atividades é dominar o ciclo de vida dos dados, incluindo:
 
 Para facilitar a navegação, os projetos estão divididos por nível de complexidade:
 
-### 1. [Atividade 1: Fundamentos de EDA](./projetos/Analise_PANDAS/atividade_eda_pandas)
+### 1. Atividade 1: Fundamentos de EDA
 Primeiro contato prático com manipulação de DataFrames.
 * **Foco:** Comandos básicos (`info`, `describe`, `head`), verificação de tipos e identificação de duplicados.
 * **Resultado:** Um diagnóstico completo da saúde inicial de um conjunto de dados.
 
-### 2. [Atividade 2: ETL e Tratamento de Emendas](./projetos/Analise_PANDAS/atividade_2_pandas)
+### 2. Atividade 2: ETL e Tratamento de Emendas
 Projeto avançado focado no dataset de Emendas Parlamentares.
 * **Foco:** Manipulação de ficheiros Parquet, tratamento de dados ausentes e exportação final para JSON.
 * **Destaque:** Uso de `groupby` para extrair somas e médias por categorias políticas e governamentais.
