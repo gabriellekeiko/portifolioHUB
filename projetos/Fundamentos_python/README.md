@@ -47,8 +47,8 @@ Práticas de iteração sobre sequências e uso intensivo da função `range()`.
 ```
 ## Autoria
 Este projeto foi desenvolvido por:
-* **Gabrielle Keiko**
-  * Aluna de Ciência de Dados e Machine Learning no **CEUB**
+* *Gabrielle Keiko*
+  * Aluna de Ciência de Dados e Machine Learning no *CEUB*
   * Lógica de Programação 2026
   * E-mail institucional: gabrielle.keiko@sempreceub.com | E-mail pessoal: gkeiko.05@gmail.com
   * Meu Perfil no LinkedIn: https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3/
