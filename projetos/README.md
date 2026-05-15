@@ -1,23 +1,54 @@
-# portfolioHUB | Gabrielle Keiko
+# portfolioHUB | Data Science Ecosystem
 
-Bem-vindo ao meu repositório central de projetos. Este ecossistema foi desenvolvido como parte do **Bootcamp 1** no **CEUB**, com o objetivo de consolidar minha trajetória acadêmica e competências técnicas em Ciência de Dados e Machine Learning.
+Este repositório é o centro estratégico da minha jornada técnica em **Ciência de Dados e Machine Learning**. Aqui, transformo dados brutos em conhecimento e lógica em soluções automatizadas, utilizando as melhores práticas de versionamento e documentação.
 
-## Estrutura do Repositório
+---
 
-Conforme as diretrizes de organização, o repositório contêm as seguintes habilidades:
+## Roadmap de Desenvolvimento
 
-* **[analise-pandas]:** Contém projetos focados em manipulação de dados, limpeza e análise exploratória utilizando a biblioteca Pandas em Python.
-* **[projetos-academicos]:** Repositório de códigos e exercícios desenvolvidos durante as disciplinas do curso de Ciência de Dados no CEUB.
-* **[documentacao]:** Arquivos de suporte, como os slides de habilidades e competências técnicas.
+Navegue pelos módulos abaixo para explorar as competências técnicas desenvolvidas:
 
-## Tecnologias e Ferramentas
+### [Fundamentos de Programação](./Fundamentos_python)
+*Foco: Construção de algoritmos robustos e lógica de controle.*
+* **Tecnologias:** Python 3.11, Spyder IDE.
+* **Competências:** Implementação de estruturas de decisão (If/Else), laços de repetição dinâmicos (While) e iterações definidas (For).
+* **Destaque:** Código limpo e estruturado para alta performance lógica.
 
-Para o desenvolvimento deste portfólio e dos projetos contidos, utilizo:
-* **Versionamento:** Git e GitHub.
-* **Publicação:** GitHub Pages para hospedagem do site estático.
-* **Linguagens:** Python (Pandas), HTML, CSS, SQL.
+### [Análise de Dados com Pandas](./Analise_PANDAS)
+*Foco: Pipeline de dados (ETL) e inteligência analítica.*
+* **Tecnologias:** Jupyter Notebook, Pandas, JSON/Parquet.
+* **Competências:** Limpeza de bases reais, tratamento de outliers e análise exploratória de Emendas Parlamentares.
+* **Destaque:** Transformação de dados complexos em relatórios prontos para tomada de decisão.
 
-## Integração Profissional
+---
 
-Este repositório está integrado ao meu **LinkedIn**, onde você pode encontrar mais detalhes sobre cada projeto na seção específica de "Projetos" do meu perfil profissional.
+## Tech Stack & Ferramentas
 
+| Categoria | Tecnologias |
+| :--- | :--- |
+| **Linguagens** | Python, HTML5, CSS3 |
+| **Data Stack** | Pandas, NumPy, JSON |
+| **Ambientes** | Spyder, Jupyter Notebook, VS Code |
+| **DevOps** | Git, GitHub Actions, GitHub Pages |
+
+---
+
+## Status dos Projetos
+
+- [x] **Módulo Lógica:** 100% Concluído (Spyder Scripts)
+- [x] **Módulo Pandas:** 100% Concluído (Data Cleaning & EDA)
+- [ ] **Módulo Visualização:** Em desenvolvimento (Matplotlib/Seaborn)
+
+---
+
+## Conecte-se Comigo
+
+Sinta-se à vontade para explorar os códigos e entrar em contato para colaborações ou insights técnicos.
+
+* **LinkedIn:** [Gabrielle Keiko](https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3/)
+* **Portfólio Web:** [Visualizar Interface Live](https://gabriellekeiko.github.io/portifolioHUB/)
+* **E-mail Institucional:** `gabrielle.keiko@sempreceub.com`
+* **E-mail Pessoal:** `gkeiko.05@gamil.com`
+
+---
+> **Nota Acadêmica:** Este portfólio integra o Desafio Intermediário do Bootcamp CEUB 2026, validando competências de Nível Intermediário em Versionamento e Ciência de Dados.
