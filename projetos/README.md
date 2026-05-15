@@ -1,4 +1,4 @@
-# portfolioHUB | Data Science Ecosystem
+# portfolioHUB | Projetos
 
 Este repositório é o centro estratégico da minha jornada técnica em **Ciência de Dados e Machine Learning**. Aqui, transformo dados brutos em conhecimento e lógica em soluções automatizadas, utilizando as melhores práticas de versionamento e documentação.
 
