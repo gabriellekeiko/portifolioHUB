@@ -23,7 +23,7 @@ O repositório está organizado em módulos de competência para facilitar a nav
 ### [Ecossistema de Projetos](./projetos)
 Nesta seção, centralizo todas as soluções práticas desenvolvidas. Aqui, o foco sai da teoria e entra na execução. Você encontrará desde scripts de automação até pipelines de dados complexos. Cada subpasta dentro deste diretório contém sua própria documentação técnica detalhada, explicando o "porquê" de cada linha de código.
 
-### [Certificações e Conquistas](./Certificados)
+### [Certificações e Conquistas](./certificados e diplomas)
 Acredito na aprendizagem contínua (*Lifelong Learning*). Esta pasta reúne as evidências formais da minha evolução, contendo certificados de cursos complementares, workshops e maratonas de programação que moldaram meu conhecimento atual.
 
 ### [Apresentações e Soft Skills](./Slides)
