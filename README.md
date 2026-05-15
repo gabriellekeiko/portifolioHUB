@@ -26,7 +26,7 @@ Nesta seção, centralizo todas as soluções práticas desenvolvidas. Aqui, o f
 ### [Certificações e Conquistas](./certificados_diplomas)
 Acredito na aprendizagem contínua (*Lifelong Learning*). Esta pasta reúne as evidências formais da minha evolução, contendo certificados de cursos complementares, workshops e maratonas de programação que moldaram meu conhecimento atual.
 
-### [Apresentações e Soft Skills](./Portifólio profissional (slides).pdf)
+### [Apresentações e Soft Skills](./Portifólio_profissional(slides).pdf)
 Um cientista de dados precisa saber contar histórias. Aqui, disponibilizo os **Slides de Habilidades** e apresentações executivas que utilizei para defender meus projetos. Estes materiais demonstram minha capacidade de traduzir termos técnicos para uma linguagem de negócios e impacto.
 
 ### [Interface e Experiência (HTML/CSS)](./index.html)
