@@ -14,21 +14,25 @@ Este diretório centraliza os exercícios práticos desenvolvidos utilizando a I
 
 A pasta está estruturada por módulos lógicos para facilitar a navegação:
 
-### 1. [Estruturas de Sequência](./caminho_da_pasta)
+### 1. Estruturas de Sequência
 Exercícios focados em entrada e saída de dados (`input`/`print`), operações aritméticas básicas e manipulação de variáveis.
 * **Exemplo:** Cálculo de média simples, conversão de medidas.
 
-### 2. [Estruturas de Seleção (If/Else)](./caminho_da_pasta)
+### 2. Estruturas de Seleção (If/Else)
 Resolução de problemas que exigem tomadas de decisão baseadas em condições lógicas.
 * **Exemplo:** Verificação de maioridade, cálculo de bônus salarial, sistemas de notas.
 
-### 3. [Estruturas de Fluxo While](./caminho_da_pasta)
+### 3. Estruturas de Fluxo While
 Scripts que utilizam repetições controladas por condições sentinelas.
 * **Exemplo:** Validação de login, menus interativos, contadores dinâmicos.
 
-### 4. [Estruturas de Fluxo For](./caminho_da_pasta)
+### 4. Estruturas de Fluxo For
 Práticas de iteração sobre sequências e uso intensivo da função `range()`.
 * **Exemplo:** Tabuadas, processamento de listas de compras, soma de intervalos.
+
+### 5. Estruturas de Dados (Listas)
+Exercícios dedicados à manipulação de coleções de dados, uso de métodos nativos (`.append, .sort, .remove`) e fatiamento (`slicing`).
+Exemplo: Processamento de listas numéricas, agregação de valores (`sum/max/min`) e iteração sequencial.
 
 ---
 
