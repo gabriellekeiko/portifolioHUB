@@ -1,307 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabrielle Keiko | portfolioHUB</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>PortfolioHUB | Gabrielle Keiko</title>
     <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #ffffff;
-            --text-sec: #94a3b8;
-            --accent: #00f0ff;
-            --accent-hover: #00c3cc;
-            --highlight: #10b981;
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; color: #2c3e50; background-color: #f4f7f6; }
+        header { background: #003366; color: white; padding: 40px 20px; text-align: center; border-radius: 8px; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        .contact-links { margin-top: 15px; }
+        .contact-links a { margin: 0 10px; color: #ffcc00; text-decoration: none; font-weight: bold; }
+        section { background: white; margin-top: 25px; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h2 { color: #003366; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .skills-list { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; }
+        .skills-list li { background: #003366; color: white; padding: 8px 18px; border-radius: 5px; font-size: 0.9em; font-weight: 500; }
+        .btn-cv { display: inline-block; background: #27ae60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        footer { text-align: center; margin-top: 40px; font-size: 0.8em; color: #7f8c8d; }
+    </style>
+</head>
+<body>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+<header>
+    <h1>Gabrielle Keiko</h1>
+    <img src="foto - Gabrielle Keiko.png" style="width: 150px; border-radius: 50%;">
+    <p>Estudante de Ciência de Dados e Machine Learning @ CEUB</p>
+    <div class="contact-links">
+        <a href="mailto:gkeiko.05@gmail.com">E-mail</a>
+        <a href="https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3" target="_blank">LinkedIn</a>
+    </div>
+</header>
 
-        html {
-            scroll-behavior: smooth;
-        }
+<section id="perfil">
+    <h2>Perfil Pessoal</h2>
+    <p>Sou estudante de Ciência de Dados e Machine Learning no CEUB, apaixonada por transformar dados em insights estratégicos. Desenvolvo habilidades técnicas em linguagens de programação e análise de dados para solucionar problemas complexos e auxiliar na tomada de decisões. [cite: 14]</p>
+</section>
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
+<section id="curriculo">
+    <h2>Currículo Profissional</h2>
+    <p>Confira meu detalhamento acadêmico, certificações e competências técnicas: [cite: 17]</p>
+    <a href="https://docs.google.com/document/d/1NbUvQel8q9LciJtY4ZRw9fJHu9knvXEq5d4pKmbuKKE/edit?usp=sharing" class="btn-cv" target="_blank">📄 Acessar Currículo Completo</a>
+</section>
 
-        a {
-            text-decoration: none;
-            color: var(--accent);
-            transition: all 0.3s ease;
-        }
+<section id="habilidades">
+    <h2>Habilidades e Competências Técnicas</h2>
+    <p>Acesse minha apresentação detalhada sobre Ciência de Dados e Machine Learning:</p>
+    
+    <a href="Portifólio_profissional(slides).pdf" target="_blank" style="font-weight: bold; color: #003366;">
+        📊 Visualizar Slides de Habilidades (PDF)
+    </a>
 
-        nav {
-            position: sticky;
-            top: 0;
-            background: rgba(15, 23, 42, 0.9);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.2rem 8%;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
+        <li>
+            <strong>
+                <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/certificados_diplomas" target="_blank">
+                    Certificados e Diplomas
+                </a>:
+            </strong> 
+            Galeria de certificações incluindo Python, SQL, C#, Scratch e Fluência (C1) em Inglês.
+        </li>
+    
+    <ul class="skills-list">
+        <li>SQL (Modelagem e Consultas)</li>
+        <li>Python (Ecossistema de Dados)</li>
+        <li>Linguagem C e C#</li>
+        <li>Machine Learning (Supervisionado/Não Supervisionado)</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
 
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
+<section id="projetos">
+    <h2>Projetos e Conquistas</h2>
+    <ul>
+        <li>
+            <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos" target="_blank">
+                <strong>Visualizar Repositório Completo</strong>
+            </a>
+        </li>
 
-        .logo span {
-            color: var(--accent);
-        }
+        <li>
+            <strong>
+                <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos/Analise_PANDAS" target="_blank">
+                    Análise de Dados com Pandas
+                </a>:
+            </strong> 
+            Manipulação, limpeza e tratamento de dados (ETL) utilizando Python e Jupyter Notebook.
+        </li>
 
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 1.8rem;
-        }
+        <li>
+            <strong>
+                <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos/Fundamentos_python" target="_blank">
+                    Fundamentos de Programação (Python)
+                </a>:
+            </strong> 
+            Exercícios práticos de lógica (Sequência, Seleção, Repetição e Listas) desenvolvidos no Spyder.
+        </li>
 
-        .nav-links a {
-            color: var(--text-sec);
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
+        <li>
+            <strong>
+                <a href="https://github.com/gabriellekeiko/portifolioHUB" target="_blank">
+                    portfolioHUB
+                </a>:
+            </strong> 
+            Desenvolvimento de um ecossistema digital profissional utilizando controle de versão com Git e GitHub Pages.
+        </li>
 
-        .nav-links a:hover {
-            color: var(--accent);
-        }
+        <li>
+            <strong>Análise de Dados Acadêmicos:</strong> 
+            Aplicação de conceitos de Machine Learning e SQL em projetos realizados no CEUB (Graduação).
+        </li>
+    </ul>
+</section>
 
-        section {
-            padding: 6rem 8% 4rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+<section id="recomendacoes" style="padding: 20px; background-color: #f4f4f4; border-radius: 8px; margin-top: 20px;">
+    <h2>Recomendações</h2>
+    <blockquote style="font-style: italic; color: #555;">
+        "Gabrielle é uma estudante dedicada. Realiza os desafios acadêmicos com criatividade e capricho. Junto à equipe, ela demonstra uma certa liderança com os colegas."
+    </blockquote>
+    <p><strong>— Marcos Quezado (Uniceub)</strong></p>
+    <blockquote style="font-style: italic; color: #555;">
+        "Gabrielle é uma profissional em início de carreira que já demonstra diferenciais claros. Seu sólido background matemático se reflete na forma estruturada com que aborda problemas de dados. Além disso, chama atenção pela postura proativa: busca sempre ir além do que é solicitado nas atividades, explorando soluções mais completas e demonstrando interesse em aprender e evoluir cada vez mais na ciência de dados."
+    </blockquote>
+    <p><strong>— Pedro Pereira (Uniceub)</strong></p>
+</section>
 
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            letter-spacing: -1px;
-        }
+<section id="feedback" style="text-align: center; padding: 40px 20px; background-color: #002b5c; color: white; border-radius: 10px; margin: 20px 0; font-family: sans-serif;">
+    <h2 style="color: #ffd700;">Gostaria de deixar uma referência?</h2>
+    <p>Se você é meu professor no CEUB ou colega de projeto, seu feedback é muito importante para mim!</p>
+    
+    <a href="https://forms.gle/d5hRQiJTSzeA4naW8" target="_blank" 
+       style="display: inline-block; padding: 15px 30px; background-color: #ffd700; color: #002b5c; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 15px; font-size: 18px; transition: 0.3s;">
+        ✍️ Escrever Recomendação no Google Forms
+    </a>
+</section>
 
-        .section-subtitle {
-            color: var(--text-sec);
-            margin-bottom: 3rem;
-            font-size: 1rem;
-        }
+<footer>
+    <p>&copy; 2026 - Gabrielle Keiko | Entrega Inicial de Portfólio Acadêmico [cite: 1, 55]</p>
+</footer>
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.8rem;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: 2px solid var(--accent);
-        }
-
-        .btn-primary {
-            background-color: var(--accent);
-            color: var(--bg-color);
-        }
-
-        .btn-primary:hover {
-            background-color: transparent;
-            color: var(--accent);
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            color: var(--accent);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--accent);
-            color: var(--bg-color);
-            transform: translateY(-2px);
-        }
-
-        .sobre-container {
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-            min-height: 70vh;
-        }
-
-        .sobre-foto-wrapper {
-            flex-shrink: 0;
-        }
-
-        .sobre-foto {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--card-bg);
-            box-shadow: 0 0 0 2px var(--accent);
-        }
-
-        .sobre-conteudo h1 {
-            font-size: 3rem;
-            line-height: 1.1;
-            margin-bottom: 1rem;
-            letter-spacing: -1px;
-        }
-
-        .sobre-conteudo h2 {
-            font-size: 1.3rem;
-            color: var(--text-sec);
-            font-weight: 400;
-            margin-bottom: 1.5rem;
-        }
-
-        .sobre-conteudo p {
-            font-size: 1.05rem;
-            color: var(--text-sec);
-            margin-bottom: 2rem;
-            max-width: 750px;
-        }
-
-        .curriculo-box {
-            background-color: var(--card-bg);
-            padding: 3rem;
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .curriculo-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 1.5rem;
-        }
-
-        .instituicao-info h3 {
-            font-size: 1.4rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .instituicao-info p {
-            color: var(--text-sec);
-        }
-
-        .periodo-tag {
-            background-color: rgba(0, 240, 255, 0.1);
-            color: var(--accent);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .curriculo-detalhes ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-        }
-
-        .curriculo-detalhes li::before {
-            content: "🔹";
-            margin-right: 0.8rem;
-        }
-
-        .habilidades-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-
-        .tech-badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            align-content: flex-start;
-        }
-
-        .badge-card {
-            background-color: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 1rem 1.5rem;
-            border-radius: 10px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .badge-card span {
-            color: var(--accent);
-        }
-
-        .pdf-viewer-container {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .pdf-frame {
-            width: 100%;
-            height: 350px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            background-color: var(--card-bg);
-        }
-
-        .repo-destaque {
-            display: block;
-            background: linear-gradient(90deg, var(--card-bg), rgba(0, 240, 255, 0.08));
-            border: 1px solid var(--accent);
-            text-align: center;
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin-bottom: 2.5rem;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
-        .repo-destaque:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 240, 255, 0.15);
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-            border-color: rgba(0, 240, 255, 0.3);
-            box-shadow: 0 12px 24px rgba
+</body>
+</html>
