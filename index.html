@@ -5,136 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortfolioHUB | Gabrielle Keiko</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; color: #2c3e50; background-color: #f4f7f6; }
-        header { background: #003366; color: white; padding: 40px 20px; text-align: center; border-radius: 8px; }
-        header h1 { margin: 0; font-size: 2.5em; }
-        .contact-links { margin-top: 15px; }
-        .contact-links a { margin: 0 10px; color: #ffcc00; text-decoration: none; font-weight: bold; }
-        section { background: white; margin-top: 25px; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #003366; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .skills-list { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; }
-        .skills-list li { background: #003366; color: white; padding: 8px 18px; border-radius: 5px; font-size: 0.9em; font-weight: 500; }
-        .btn-cv { display: inline-block; background: #27ae60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        footer { text-align: center; margin-top: 40px; font-size: 0.8em; color: #7f8c8d; }
-    </style>
-</head>
-<body>
+        :root {
+            --navy: #071d33;
+            --blue: #155e8f;
+            --accent: #d9a441;
+            --green: #22745a;
+            --text: #223044;
+            --muted: #64748b;
+            --line: #d9e2ec;
+            --bg: #f3f6fa;
+            --white: #ffffff;
+            --shadow: 0 14px 35px rgba(6, 33, 61, 0.12);
+        }
 
-<header>
-    <h1>Gabrielle Keiko</h1>
-    <img src="foto - Gabrielle Keiko.png" style="width: 150px; border-radius: 50%;">
-    <p>Estudante de Ciência de Dados e Machine Learning @ CEUB</p>
-    <div class="contact-links">
-        <a href="mailto:gkeiko.05@gmail.com">E-mail</a>
-        <a href="https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3" target="_blank">LinkedIn</a>
-    </div>
-</header>
+        * {
+            box-sizing: border-box;
+        }
 
-<section id="perfil">
-    <h2>Perfil Pessoal</h2>
-    <p>Sou estudante de Ciência de Dados e Machine Learning no CEUB, apaixonada por transformar dados em insights estratégicos. Desenvolvo habilidades técnicas em linguagens de programação e análise de dados para solucionar problemas complexos e auxiliar na tomada de decisões. [cite: 14]</p>
-</section>
+        html {
+            scroll-behavior: smooth;
+        }
 
-<section id="curriculo">
-    <h2>Currículo Profissional</h2>
-    <p>Confira meu detalhamento acadêmico, certificações e competências técnicas: [cite: 17]</p>
-    <a href="https://docs.google.com/document/d/1NbUvQel8q9LciJtY4ZRw9fJHu9knvXEq5d4pKmbuKKE/edit?usp=sharing" class="btn-cv" target="_blank">📄 Acessar Currículo Completo</a>
-</section>
+        body {
+            margin: 0;
+            font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
 
-<section id="habilidades">
-    <h2>Habilidades e Competências Técnicas</h2>
-    <p>Acesse minha apresentação detalhada sobre Ciência de Dados e Machine Learning:</p>
-    
-    <a href="Portifólio_profissional(slides).pdf" target="_blank" style="font-weight: bold; color: #003366;">
-        📊 Visualizar Slides de Habilidades (PDF)
-    </a>
+        a {
+            color: var(--blue);
+            text-decoration: none;
+            font-weight: 700;
+        }
 
-        <li>
-            <strong>
-                <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/certificados_diplomas" target="_blank">
-                    Certificados e Diplomas
-                </a>:
-            </strong> 
-            Galeria de certificações incluindo Python, SQL, C#, Scratch e Fluência (C1) em Inglês.
-        </li>
-    
-    <ul class="skills-list">
-        <li>SQL (Modelagem e Consultas)</li>
-        <li>Python (Ecossistema de Dados)</li>
-        <li>Linguagem C e C#</li>
-        <li>Machine Learning (Supervisionado/Não Supervisionado)</li>
-        <li>Git & GitHub</li>
-    </ul>
-</section>
+        a:hover {
+            text-decoration: underline;
+        }
 
-<section id="projetos">
-    <h2>Projetos e Conquistas</h2>
-    <ul>
-        <li>
-            <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos" target="_blank">
-                <strong>Visualizar Repositório Completo</strong>
-            </a>
-        </li>
+        .layout {
+            display: grid;
+            grid-template-columns: 280px minmax(0, 1fr);
+            min-height: 100vh;
+        }
 
-        <li>
-            <strong>
-                <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos/Analise_PANDAS" target="_blank">
-                    Análise de Dados com Pandas
-                </a>:
-            </strong> 
-            Manipulação, limpeza e tratamento de dados (ETL) utilizando Python e Jupyter Notebook.
-        </li>
+        .sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            padding: 28px 22px;
+            background: var(--navy);
+            color: var(--white);
+            overflow-y: auto;
+        }
 
-        <li>
-            <strong>
-                <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos/Fundamentos_python" target="_blank">
-                    Fundamentos de Programação (Python)
-                </a>:
-            </strong> 
-            Exercícios práticos de lógica (Sequência, Seleção, Repetição e Listas) desenvolvidos no Spyder.
-        </li>
+        .sidebar-brand {
+            margin-bottom: 30px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        }
 
-        <li>
-            <strong>
-                <a href="https://github.com/gabriellekeiko/portifolioHUB" target="_blank">
-                    portfolioHUB
-                </a>:
-            </strong> 
-            Desenvolvimento de um ecossistema digital profissional utilizando controle de versão com Git e GitHub Pages.
-        </li>
+        .sidebar-brand strong {
+            display: block;
+            font-size: 1.25rem;
+            letter-spacing: 0.2px;
+        }
 
-        <li>
-            <strong>Análise de Dados Acadêmicos:</strong> 
-            Aplicação de conceitos de Machine Learning e SQL em projetos realizados no CEUB (Graduação).
-        </li>
-    </ul>
-</section>
+        .sidebar-brand span {
+            display: block;
+            margin-top: 6px;
+            color: #b8c7d8;
+            font-size: 0.92rem;
+        }
 
-<section id="recomendacoes" style="padding: 20px; background-color: #f4f4f4; border-radius: 8px; margin-top: 20px;">
-    <h2>Recomendações</h2>
-    <blockquote style="font-style: italic; color: #555;">
-        "Gabrielle é uma estudante dedicada. Realiza os desafios acadêmicos com criatividade e capricho. Junto à equipe, ela demonstra uma certa liderança com os colegas."
-    </blockquote>
-    <p><strong>— Marcos Quezado (Uniceub)</strong></p>
-    <blockquote style="font-style: italic; color: #555;">
-        "Gabrielle é uma profissional em início de carreira que já demonstra diferenciais claros. Seu sólido background matemático se reflete na forma estruturada com que aborda problemas de dados. Além disso, chama atenção pela postura proativa: busca sempre ir além do que é solicitado nas atividades, explorando soluções mais completas e demonstrando interesse em aprender e evoluir cada vez mais na ciência de dados."
-    </blockquote>
-    <p><strong>— Pedro Pereira (Uniceub)</strong></p>
-</section>
+        .nav-title {
+            margin: 0 0 12px;
+            color: #b8c7d8;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
 
-<section id="feedback" style="text-align: center; padding: 40px 20px; background-color: #002b5c; color: white; border-radius: 10px; margin: 20px 0; font-family: sans-serif;">
-    <h2 style="color: #ffd700;">Gostaria de deixar uma referência?</h2>
-    <p>Se você é meu professor no CEUB ou colega de projeto, seu feedback é muito importante para mim!</p>
-    
-    <a href="https://forms.gle/d5hRQiJTSzeA4naW8" target="_blank" 
-       style="display: inline-block; padding: 15px 30px; background-color: #ffd700; color: #002b5c; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 15px; font-size: 18px; transition: 0.3s;">
-        ✍️ Escrever Recomendação no Google Forms
-    </a>
-</section>
+        .quick-nav {
+            display: grid;
+            gap: 8px;
+        }
 
-<footer>
-    <p>&copy; 2026 - Gabrielle Keiko | Entrega Inicial de Portfólio Acadêmico [cite: 1, 55]</p>
-</footer>
+        .quick-nav a {
+            display: block;
+            padding: 10px 12px;
+            color: var(--white);
+            border-radius: 6px;
+            font-weight: 600;
+        }
 
-</body>
-</html>
+        .quick-nav a:hover {
+            background: rgba(255, 255, 255, 0.12);
+            text-decoration: none;
+        }
+
+        .sidebar-contact {
+            margin-top: 28px;
+            padding-top: 22px;
+            border-top: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .sidebar-contact a {
+            display: block;
+            margin-top: 10px;
+            color
