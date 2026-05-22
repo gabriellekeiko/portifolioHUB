@@ -46,6 +46,11 @@ A partir do processamento feito no Python, destacam-se análises como o **Top 10
 
 ---
 
+### Conheça o Site do Projeto
+A interface visual, com gráficos interativos e dados apurados:
+**[Aceder ao Streaming Tracks Dataset](https://gabriellekeiko.github.io/Analise_Spotify/)**
+
+---
 ## Autoria
 Este projeto foi desenvolvido por:
 * **Gabrielle Keiko**
