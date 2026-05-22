@@ -44,11 +44,12 @@ A partir do processamento feito no Python, destacam-se análises como o **Top 10
 * **Font Awesome** — Biblioteca de ícones vetoriais integrados na página.
 * **Git Bash** — Para versionamento e 'push'
 
-## Autoria e Link do Projeto
-
-Este ecossistema foi totalmente planeado, estruturado e desenvolvido por:
-
-**Gabrielle Keiko**
-*Estudante de Bacharelado em Ciência de Dados e Machine Learning — CEUB*
-
 ---
+
+## Autoria
+Este projeto foi desenvolvido por:
+* **Gabrielle Keiko**
+  * Aluna de Ciência de Dados e Machine Learning no **CEUB**
+  * Introdução a Ciência de Dados 2026
+  * E-mail institucional: gabrielle.keiko@sempreceub.com | E-mail pessoal: gkeiko.05@gmail.com
+  * Meu Perfil no LinkedIn: https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3/
