@@ -5,136 +5,566 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortfolioHUB | Gabrielle Keiko</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; color: #2c3e50; background-color: #f4f7f6; }
-        header { background: #003366; color: white; padding: 40px 20px; text-align: center; border-radius: 8px; }
-        header h1 { margin: 0; font-size: 2.5em; }
-        .contact-links { margin-top: 15px; }
-        .contact-links a { margin: 0 10px; color: #ffcc00; text-decoration: none; font-weight: bold; }
-        section { background: white; margin-top: 25px; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #003366; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .skills-list { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; }
-        .skills-list li { background: #003366; color: white; padding: 8px 18px; border-radius: 5px; font-size: 0.9em; font-weight: 500; }
-        .btn-cv { display: inline-block; background: #27ae60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        footer { text-align: center; margin-top: 40px; font-size: 0.8em; color: #7f8c8d; }
+        :root {
+            --navy: #071d33;
+            --blue: #155e8f;
+            --accent: #d9a441;
+            --green: #22745a;
+            --text: #223044;
+            --muted: #64748b;
+            --line: #d9e2ec;
+            --bg: #f3f6fa;
+            --white: #ffffff;
+            --shadow: 0 14px 35px rgba(6, 33, 61, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        a {
+            color: var(--blue);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 280px minmax(0, 1fr);
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            padding: 28px 22px;
+            background: var(--navy);
+            color: var(--white);
+            overflow-y: auto;
+        }
+
+        .sidebar-brand {
+            margin-bottom: 30px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .sidebar-brand strong {
+            display: block;
+            font-size: 1.25rem;
+            letter-spacing: 0.2px;
+        }
+
+        .sidebar-brand span {
+            display: block;
+            margin-top: 6px;
+            color: #b8c7d8;
+            font-size: 0.92rem;
+        }
+
+        .nav-title {
+            margin: 0 0 12px;
+            color: #b8c7d8;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .quick-nav {
+            display: grid;
+            gap: 8px;
+        }
+
+        .quick-nav a {
+            display: block;
+            padding: 10px 12px;
+            color: var(--white);
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .quick-nav a:hover {
+            background: rgba(255, 255, 255, 0.12);
+            text-decoration: none;
+        }
+
+        .sidebar-contact {
+            margin-top: 28px;
+            padding-top: 22px;
+            border-top: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .sidebar-contact a {
+            display: block;
+            margin-top: 10px;
+            color: var(--accent);
+            word-break: break-word;
+        }
+
+        main {
+            width: min(1120px, 100%);
+            margin: 0 auto;
+            padding: 32px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 28px;
+            align-items: center;
+            min-height: 360px;
+            padding: 42px;
+            color: var(--white);
+            background: linear-gradient(135deg, var(--navy), var(--blue));
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-label {
+            margin: 0 0 12px;
+            color: #d9e8f7;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: clamp(2.3rem, 5vw, 4.4rem);
+            line-height: 1.05;
+            letter-spacing: 0;
+        }
+
+        .hero p {
+            max-width: 660px;
+            margin: 18px 0 0;
+            color: #eaf2fb;
+            font-size: 1.08rem;
+        }
+
+        .profile-photo {
+            width: 172px;
+            height: 172px;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.85);
+            border-radius: 50%;
+            background: #d9e2ec;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 26px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            padding: 10px 18px;
+            color: var(--white);
+            background: var(--green);
+            border: 0;
+            border-radius: 6px;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            text-decoration: none;
+            filter: brightness(0.96);
+        }
+
+        .button.secondary {
+            color: var(--navy);
+            background: var(--accent);
+        }
+
+        .content-section {
+            margin-top: 24px;
+            padding: 30px;
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            box-shadow: 0 8px 22px rgba(6, 33, 61, 0.06);
+            scroll-margin-top: 24px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 18px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .section-header h2 {
+            margin: 0;
+            color: var(--navy);
+            font-size: 1.45rem;
+        }
+
+        .section-header p {
+            max-width: 620px;
+            margin: 4px 0 0;
+            color: var(--muted);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills-list li {
+            padding: 8px 14px;
+            color: var(--navy);
+            background: #e7f0f8;
+            border: 1px solid #c8d9e8;
+            border-radius: 6px;
+            font-size: 0.92rem;
+            font-weight: 700;
+        }
+
+        .project-list,
+        .link-list {
+            display: grid;
+            gap: 14px;
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .project-list li,
+        .link-list li {
+            padding-left: 4px;
+        }
+
+        .recommendation {
+            margin: 0 0 18px;
+            padding: 18px 20px;
+            background: #f7fafc;
+            border-left: 4px solid var(--blue);
+            border-radius: 6px;
+        }
+
+        .recommendation blockquote {
+            margin: 0;
+            color: #3f4f63;
+            font-style: italic;
+        }
+
+        .recommendation p {
+            margin: 12px 0 0;
+            color: var(--navy);
+            font-weight: 800;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .contact-card {
+            padding: 18px;
+            background: #f7fafc;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+        }
+
+        .contact-card strong {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--navy);
+        }
+
+        .feedback-panel {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 20px;
+            align-items: center;
+            padding: 24px;
+            color: var(--white);
+            background: var(--navy);
+            border-radius: 8px;
+        }
+
+        .feedback-panel h3 {
+            margin: 0 0 8px;
+            color: var(--accent);
+            font-size: 1.3rem;
+        }
+
+        .feedback-panel p {
+            margin: 0;
+            color: #d9e8f7;
+        }
+
+        footer {
+            margin: 34px 0 10px;
+            color: var(--muted);
+            text-align: center;
+            font-size: 0.88rem;
+        }
+
+        @media (max-width: 900px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+            }
+
+            .quick-nav {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            main {
+                padding: 18px;
+            }
+
+            .hero,
+            .feedback-panel {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-photo {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .quick-nav,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero,
+            .content-section {
+                padding: 22px;
+            }
+
+            .section-header {
+                display: block;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="layout">
+        <aside class="sidebar" aria-label="Navegação principal">
+            <div class="sidebar-brand">
+                <strong>PortfolioHUB</strong>
+                <span>Gabrielle Keiko</span>
+            </div>
 
-<header>
-    <h1>Gabrielle Keiko</h1>
-    <img src="foto - Gabrielle Keiko.jpeg" style="width: 150px; border-radius: 50%;">
-    <p>Estudante de Ciência de Dados e Machine Learning @ CEUB</p>
-    <div class="contact-links">
-        <a href="mailto:gkeiko.05@gmail.com">E-mail</a>
-        <a href="https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3" target="_blank">LinkedIn</a>
+            <p class="nav-title">Acesso rápido</p>
+            <nav class="quick-nav">
+                <a href="#inicio">Início</a>
+                <a href="#perfil">Perfil</a>
+                <a href="#curriculo">Currículo</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#recomendacoes">Recomendações</a>
+                <a href="#contato">Contato</a>
+                <a href="#feedback">Feedback</a>
+            </nav>
+
+            <div class="sidebar-contact">
+                <p class="nav-title">Contato direto</p>
+                <a href="mailto:gkeiko.05@gmail.com">E-mail</a>
+                <a href="https://wa.me/5561995900744" target="_blank" rel="noopener">WhatsApp</a>
+                <a href="https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </aside>
+
+        <main>
+            <header class="hero" id="inicio">
+                <div>
+                    <p class="hero-label">Ciência de Dados e Machine Learning</p>
+                    <h1>Gabrielle Keiko</h1>
+                    <p>Estudante do CEUB com foco em análise de dados, programação e construção de soluções orientadas por evidências para apoiar decisões estratégicas.</p>
+                    <div class="hero-actions">
+                        <a class="button" href="https://docs.google.com/document/d/1NbUvQel8q9LciJtY4ZRw9fJHu9knvXEq5d4pKmbuKKE/edit?usp=sharing" target="_blank" rel="noopener">Acessar currículo</a>
+                        <a class="button secondary" href="#contato">Entrar em contato</a>
+                    </div>
+                </div>
+                <img class="profile-photo" src="foto.jpeg" alt="Foto de Gabrielle Keiko">
+            </header>
+
+            <section class="content-section" id="perfil">
+                <div class="section-header">
+                    <div>
+                        <h2>Perfil Pessoal</h2>
+                        <p>Apresentação profissional e área de interesse.</p>
+                    </div>
+                </div>
+                <p>Sou estudante de Ciência de Dados e Machine Learning no CEUB, apaixonada por transformar dados em insights estratégicos. Desenvolvo habilidades técnicas em linguagens de programação, análise de dados e modelagem para solucionar problemas complexos e auxiliar na tomada de decisões.</p>
+            </section>
+
+            <section class="content-section" id="curriculo">
+                <div class="section-header">
+                    <div>
+                        <h2>Currículo Profissional</h2>
+                        <p>Formação, certificações e competências técnicas em um documento completo.</p>
+                    </div>
+                </div>
+                <p>Confira meu detalhamento acadêmico, certificações, experiências de aprendizagem e competências técnicas.</p>
+                <a class="button" href="https://docs.google.com/document/d/1NbUvQel8q9LciJtY4ZRw9fJHu9knvXEq5d4pKmbuKKE/edit?usp=sharing" target="_blank" rel="noopener">Abrir currículo completo</a>
+            </section>
+
+            <section class="content-section" id="habilidades">
+                <div class="section-header">
+                    <div>
+                        <h2>Habilidades e Competências Técnicas</h2>
+                        <p>Principais ferramentas, linguagens e áreas de estudo.</p>
+                    </div>
+                </div>
+                <ul class="link-list">
+                    <li>
+                        <strong><a href="Portifólio_profissional(slides).pdf" target="_blank">Slides de habilidades</a>:</strong>
+                        apresentação detalhada sobre Ciência de Dados e Machine Learning.
+                    </li>
+                    <li>
+                        <strong><a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/certificados_diplomas" target="_blank" rel="noopener">Certificados e Diplomas</a>:</strong>
+                        galeria de certificações incluindo Python, SQL, C#, Scratch e fluência C1 em inglês.
+                    </li>
+                </ul>
+
+                <ul class="skills-list" aria-label="Lista de habilidades">
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>C e C#</li>
+                    <li>Machine Learning</li>
+                    <li>Git e GitHub</li>
+                    <li>ETL</li>
+                    <li>Análise de Dados</li>
+                </ul>
+            </section>
+
+            <section class="content-section" id="projetos">
+                <div class="section-header">
+                    <div>
+                        <h2>Projetos e Conquistas</h2>
+                        <p>Trabalhos acadêmicos, estudos práticos e portfólio técnico.</p>
+                    </div>
+                </div>
+                <ul class="project-list">
+                    <li>
+                        <strong><a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos" target="_blank" rel="noopener">Repositório completo</a>:</strong>
+                        coleção organizada dos projetos publicados.
+                    </li>
+                    <li>
+                        <strong><a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos/Analise_PANDAS" target="_blank" rel="noopener">Análise de Dados com Pandas</a>:</strong>
+                        manipulação, limpeza e tratamento de dados com Python e Jupyter Notebook.
+                    </li>
+                    <li>
+                        <strong><a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos/Fundamentos_python" target="_blank" rel="noopener">Fundamentos de Programação em Python</a>:</strong>
+                        exercícios de lógica, seleção, repetição e listas desenvolvidos no Spyder.
+                    </li>
+                    <li>
+                        <strong><a href="https://github.com/gabriellekeiko/portifolioHUB" target="_blank" rel="noopener">PortfolioHUB</a>:</strong>
+                        ecossistema digital profissional desenvolvido com Git, GitHub e GitHub Pages.
+                    </li>
+                    <li>
+                        <strong>Análise de Dados Acadêmicos:</strong>
+                        aplicação de conceitos de Machine Learning e SQL em projetos realizados na graduação.
+                    </li>
+                </ul>
+            </section>
+
+            <section class="content-section" id="recomendacoes">
+                <div class="section-header">
+                    <div>
+                        <h2>Recomendações</h2>
+                        <p>Referências acadêmicas e profissionais.</p>
+                    </div>
+                </div>
+                <article class="recommendation">
+                    <blockquote>"Gabrielle é uma estudante dedicada. Realiza os desafios acadêmicos com criatividade e capricho. Junto à equipe, ela demonstra uma certa liderança com os colegas."</blockquote>
+                    <p>Marcos Quezado, Uniceub</p>
+                </article>
+                <article class="recommendation">
+                    <blockquote>"Gabrielle é uma profissional em início de carreira que já demonstra diferenciais claros. Seu sólido background matemático se reflete na forma estruturada com que aborda problemas de dados. Além disso, chama atenção pela postura proativa: busca sempre ir além do que é solicitado nas atividades, explorando soluções mais completas e demonstrando interesse em aprender e evoluir cada vez mais na ciência de dados."</blockquote>
+                    <p>Pedro Pereira, Uniceub</p>
+                </article>
+            </section>
+
+            <section class="content-section" id="contato">
+                <div class="section-header">
+                    <div>
+                        <h2>Contato</h2>
+                        <p>Canais para networking, oportunidades acadêmicas e projetos.</p>
+                    </div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <strong>E-mail</strong>
+                        <a href="mailto:gkeiko.05@gmail.com">gkeiko.05@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <strong>WhatsApp</strong>
+                        <a href="https://wa.me/5561995900744" target="_blank" rel="noopener">(61) 99590-0744</a>
+                    </div>
+                    <div class="contact-card">
+                        <strong>LinkedIn</strong>
+                        <a href="https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3" target="_blank" rel="noopener">linkedin.com/in/gabrielle-keiko-9baa6a2b3</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" id="feedback">
+                <div class="feedback-panel">
+                    <div>
+                        <h3>Deixe uma referência ou feedback</h3>
+                        <p>Professores, colegas de projeto e parceiros acadêmicos podem contribuir com uma recomendação pelo formulário.</p>
+                    </div>
+                    <a class="button secondary" href="https://forms.gle/d5hRQiJTSzeA4naW8" target="_blank" rel="noopener">Enviar feedback</a>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 - Gabrielle Keiko | PortfolioHUB Acadêmico e Profissional</p>
+            </footer>
+        </main>
     </div>
-</header>
-
-<section id="perfil">
-    <h2>Perfil Pessoal</h2>
-    <p>Sou estudante de Ciência de Dados e Machine Learning no CEUB, apaixonada por transformar dados em insights estratégicos. Desenvolvo habilidades técnicas em linguagens de programação e análise de dados para solucionar problemas complexos e auxiliar na tomada de decisões. [cite: 14]</p>
-</section>
-
-<section id="curriculo">
-    <h2>Currículo Profissional</h2>
-    <p>Confira meu detalhamento acadêmico, certificações e competências técnicas: [cite: 17]</p>
-    <a href="https://docs.google.com/document/d/1NbUvQel8q9LciJtY4ZRw9fJHu9knvXEq5d4pKmbuKKE/edit?usp=sharing" class="btn-cv" target="_blank">📄 Acessar Currículo Completo</a>
-</section>
-
-<section id="habilidades">
-    <h2>Habilidades e Competências Técnicas</h2>
-    <p>Acesse minha apresentação detalhada sobre Ciência de Dados e Machine Learning:</p>
-    
-    <a href="Portifólio_profissional(slides).pdf" target="_blank" style="font-weight: bold; color: #003366;">
-        📊 Visualizar Slides de Habilidades (PDF)
-    </a>
-
-        <li>
-            <strong>
-                <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/certificados_diplomas" target="_blank">
-                    Certificados e Diplomas
-                </a>:
-            </strong> 
-            Galeria de certificações incluindo Python, SQL, C#, Scratch e Fluência (C1) em Inglês.
-        </li>
-    
-    <ul class="skills-list">
-        <li>SQL (Modelagem e Consultas)</li>
-        <li>Python (Ecossistema de Dados)</li>
-        <li>Linguagem C e C#</li>
-        <li>Machine Learning (Supervisionado/Não Supervisionado)</li>
-        <li>Git & GitHub</li>
-    </ul>
-</section>
-
-<section id="projetos">
-    <h2>Projetos e Conquistas</h2>
-    <ul>
-        <li>
-            <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos" target="_blank">
-                <strong>Visualizar Repositório Completo</strong>
-            </a>
-        </li>
-
-        <li>
-            <strong>
-                <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos/Analise_PANDAS" target="_blank">
-                    Análise de Dados com Pandas
-                </a>:
-            </strong> 
-            Manipulação, limpeza e tratamento de dados (ETL) utilizando Python e Jupyter Notebook.
-        </li>
-
-        <li>
-            <strong>
-                <a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos/Fundamentos_python" target="_blank">
-                    Fundamentos de Programação (Python)
-                </a>:
-            </strong> 
-            Exercícios práticos de lógica (Sequência, Seleção, Repetição e Listas) desenvolvidos no Spyder.
-        </li>
-
-        <li>
-            <strong>
-                <a href="https://github.com/gabriellekeiko/portifolioHUB" target="_blank">
-                    portfolioHUB
-                </a>:
-            </strong> 
-            Desenvolvimento de um ecossistema digital profissional utilizando controle de versão com Git e GitHub Pages.
-        </li>
-
-        <li>
-            <strong>Análise de Dados Acadêmicos:</strong> 
-            Aplicação de conceitos de Machine Learning e SQL em projetos realizados no CEUB (Graduação).
-        </li>
-    </ul>
-</section>
-
-<section id="recomendacoes" style="padding: 20px; background-color: #f4f4f4; border-radius: 8px; margin-top: 20px;">
-    <h2>Recomendações</h2>
-    <blockquote style="font-style: italic; color: #555;">
-        "Gabrielle é uma estudante dedicada. Realiza os desafios acadêmicos com criatividade e capricho. Junto à equipe, ela demonstra uma certa liderança com os colegas."
-    </blockquote>
-    <p><strong>— Marcos Quezado (Uniceub)</strong></p>
-    <blockquote style="font-style: italic; color: #555;">
-        "Gabrielle é uma profissional em início de carreira que já demonstra diferenciais claros. Seu sólido background matemático se reflete na forma estruturada com que aborda problemas de dados. Além disso, chama atenção pela postura proativa: busca sempre ir além do que é solicitado nas atividades, explorando soluções mais completas e demonstrando interesse em aprender e evoluir cada vez mais na ciência de dados."
-    </blockquote>
-    <p><strong>— Pedro Pereira (Uniceub)</strong></p>
-</section>
-
-<section id="feedback" style="text-align: center; padding: 40px 20px; background-color: #002b5c; color: white; border-radius: 10px; margin: 20px 0; font-family: sans-serif;">
-    <h2 style="color: #ffd700;">Gostaria de deixar uma referência?</h2>
-    <p>Se você é meu professor no CEUB ou colega de projeto, seu feedback é muito importante para mim!</p>
-    
-    <a href="https://forms.gle/d5hRQiJTSzeA4naW8" target="_blank" 
-       style="display: inline-block; padding: 15px 30px; background-color: #ffd700; color: #002b5c; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 15px; font-size: 18px; transition: 0.3s;">
-        ✍️ Escrever Recomendação no Google Forms
-    </a>
-</section>
-
-<footer>
-    <p>&copy; 2026 - Gabrielle Keiko | Entrega Inicial de Portfólio Acadêmico [cite: 1, 55]</p>
-</footer>
-
 </body>
 </html>
