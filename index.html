@@ -305,26 +305,19 @@
             color: var(--navy);
         }
 
-        .feedback-panel {
+        .feedback-container {
             display: grid;
-            grid-template-columns: minmax(0, 1fr) auto;
+            grid-template-columns: 1fr;
             gap: 20px;
-            align-items: center;
-            padding: 24px;
-            color: var(--white);
-            background: var(--navy);
+            margin-top: 20px;
+        }
+
+        .feedback-iframe {
+            width: 100%;
+            height: 600px;
+            border: 1px solid var(--line);
             border-radius: 8px;
-        }
-
-        .feedback-panel h3 {
-            margin: 0 0 8px;
-            color: var(--accent);
-            font-size: 1.3rem;
-        }
-
-        .feedback-panel p {
-            margin: 0;
-            color: #d9e8f7;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
         }
 
         footer {
@@ -332,6 +325,25 @@
             color: var(--muted);
             text-align: center;
             font-size: 0.88rem;
+        }
+
+        /* Estilo para os cards gerados dinamicamente pela API do GitHub */
+        .dinamico-git-card {
+            padding: 16px;
+            background: #f7fafc;
+            border-left: 4px solid var(--accent);
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+        .dinamico-git-card h4 {
+            margin: 0 0 6px;
+            color: var(--navy);
+            font-size: 1.1rem;
+        }
+        .dinamico-git-card p {
+            margin: 0 0 10px;
+            color: var(--text);
+            font-size: 0.95rem;
         }
 
         @media (max-width: 900px) {
@@ -352,8 +364,7 @@
                 padding: 18px;
             }
 
-            .hero,
-            .feedback-panel {
+            .hero {
                 grid-template-columns: 1fr;
             }
 
@@ -497,74 +508,4 @@
                         manipulação, limpeza e tratamento de dados com Python e Jupyter Notebook.
                     </li>
                     <li>
-                        <strong><a href="https://github.com/gabriellekeiko/portifolioHUB/tree/main/projetos/Fundamentos_python" target="_blank" rel="noopener">Fundamentos de Programação em Python</a>:</strong>
-                        exercícios de lógica, seleção, repetição e listas desenvolvidos no Spyder.
-                    </li>
-                    <li>
-                        <strong><a href="https://github.com/gabriellekeiko/portifolioHUB" target="_blank" rel="noopener">PortfolioHUB</a>:</strong>
-                        ecossistema digital profissional desenvolvido com Git, GitHub e GitHub Pages.
-                    </li>
-                    <li>
-                        <strong>Análise de Dados Acadêmicos:</strong>
-                        aplicação de conceitos de Machine Learning e SQL em projetos realizados na graduação.
-                    </li>
-                </ul>
-            </section>
-
-            <section class="content-section" id="recomendacoes">
-                <div class="section-header">
-                    <div>
-                        <h2>Recomendações</h2>
-                        <p>Referências acadêmicas e profissionais.</p>
-                    </div>
-                </div>
-                <article class="recommendation">
-                    <blockquote>"Gabrielle é uma estudante dedicada. Realiza os desafios acadêmicos com criatividade e capricho. Junto à equipe, ela demonstra uma certa liderança com os colegas."</blockquote>
-                    <p>Marcos Quezado, Uniceub</p>
-                </article>
-                <article class="recommendation">
-                    <blockquote>"Gabrielle é uma profissional em início de carreira que já demonstra diferenciais claros. Seu sólido background matemático se reflete na forma estruturada com que aborda problemas de dados. Além disso, chama atenção pela postura proativa: busca sempre ir além do que é solicitado nas atividades, explorando soluções mais completas e demonstrando interesse em aprender e evoluir cada vez mais na ciência de dados."</blockquote>
-                    <p>Pedro Pereira, Uniceub</p>
-                </article>
-            </section>
-
-            <section class="content-section" id="contato">
-                <div class="section-header">
-                    <div>
-                        <h2>Contato</h2>
-                        <p>Canais para networking, oportunidades acadêmicas e projetos.</p>
-                    </div>
-                </div>
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <strong>E-mail</strong>
-                        <a href="mailto:gkeiko.05@gmail.com">gkeiko.05@gmail.com</a>
-                    </div>
-                    <div class="contact-card">
-                        <strong>WhatsApp</strong>
-                        <a href="https://wa.me/5561995900744" target="_blank" rel="noopener">(61) 99590-0744</a>
-                    </div>
-                    <div class="contact-card">
-                        <strong>LinkedIn</strong>
-                        <a href="https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3" target="_blank" rel="noopener">linkedin.com/in/gabrielle-keiko-9baa6a2b3</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="content-section" id="feedback">
-                <div class="feedback-panel">
-                    <div>
-                        <h3>Deixe uma referência ou feedback</h3>
-                        <p>Professores, colegas de projeto e parceiros acadêmicos podem contribuir com uma recomendação pelo formulário.</p>
-                    </div>
-                    <a class="button secondary" href="https://forms.gle/d5hRQiJTSzeA4naW8" target="_blank" rel="noopener">Enviar feedback</a>
-                </div>
-            </section>
-
-            <footer>
-                <p>&copy; 2026 - Gabrielle Keiko | PortfolioHUB Acadêmico e Profissional</p>
-            </footer>
-        </main>
-    </div>
-</body>
-</html>
+                        <strong><a href="https
