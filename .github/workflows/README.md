@@ -1,4 +1,4 @@
-# PortfolioHUB | DevOps & CI/CD 🤖
+# PortfolioHUB | DevOps & CI/CD 
 
 Este diretório é o centro de automação e infraestrutura do ecossistema PortfolioHUB. Aqui, transformamos scripts de deploy em uma esteira de entrega contínua automatizada, utilizando as melhores práticas de mercado para garantir estabilidade, segurança e eficiência a cada atualização.
 
@@ -35,7 +35,7 @@ Navegue pelos módulos abaixo para explorar as competências de infraestrutura d
 
 * 🟢 **Módulo CI/CD:** 100% Concluído (Deploy automatizado via `deploy.yml`)
 * 🟢 **Módulo Governança:** 100% Concluído (Tokens de permissão restrita configurados)
-* 🟢 **Módulo Multienviroment:** Em planejamento (Testes automatizados integrados à branch `staging`)
+* 🟢 **Módulo Multienviroment:** 100% Concluído (Testes automatizados integrados à branch `staging`)
 
 ---
 
@@ -43,7 +43,7 @@ Navegue pelos módulos abaixo para explorar as competências de infraestrutura d
 
 Sinta-se à vontade para explorar os códigos da nossa esteira de automação e entrar em contato para colaborações ou insights técnicos.
 
-* **LinkedIn:** [Gabrielle Keiko](https://www.linkedin.com/) *(Insira seu link aqui)*
+* **LinkedIn:** [Gabrielle Keiko](https://www.linkedin.com/in/gabrielle-keiko-9baa6a2b3/))
 * **Portfólio Web:** [Visualizar Interface Live](https://gabriellekeiko.github.io/portifolioHUB/)
 * **E-mail Institucional:** gabrielle.keiko@sempreceub.com
 * **E-mail Pessoal:** gkeiko.05@gmail.com
