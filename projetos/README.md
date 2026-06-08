@@ -37,7 +37,7 @@ Navegue pelos módulos abaixo para explorar as competências técnicas desenvolv
 
 - [x] **Módulo Lógica:** 100% Concluído (Spyder Scripts)
 - [x] **Módulo Pandas:** 100% Concluído (Data Cleaning & EDA)
-- [ ] **Módulo Visualização:** Em desenvolvimento (Matplotlib/Seaborn)
+- [x] **Módulo Visualização:** Em desenvolvimento (Matplotlib/Seaborn)
 
 ---
 
@@ -49,6 +49,3 @@ Sinta-se à vontade para explorar os códigos e entrar em contato para colabora�
 * **Portfólio Web:** [Visualizar Interface Live](https://gabriellekeiko.github.io/portifolioHUB/)
 * **E-mail Institucional:** `gabrielle.keiko@sempreceub.com`
 * **E-mail Pessoal:** `gkeiko.05@gmail.com`
-
----
-> **Nota Acadêmica:** Este portfólio integra o Desafio Intermediário do Bootcamp CEUB 2026, validando competências de Nível Intermediário em Versionamento e Ciência de Dados.
