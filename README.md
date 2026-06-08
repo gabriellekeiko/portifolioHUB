@@ -34,23 +34,43 @@ O código por trás da interface. Este módulo contém a estruturação em HTML 
 
 ---
 
-## Meu Toolkit Tecnológico
+## Diferenciais Corporativos Implementados
 
-* **Linguagem Core:** Python (com foco em processamento científico no Spyder).
-* **Data Science:** Manipulação avançada com Pandas e Numpy.
-* **Web Stack:** Estruturação semântica em HTML5 e design responsivo com CSS3.
-* **Versionamento:** Gestão de repositórios com Git, utilizando boas práticas de Commits e Branching.
+### 1. Esteira de CI/CD e Infraestrutura (DevOps)
+* **Ambientes Segregados:** Estruturação de ramificações isoladas para homologação (`staging`) e produção (`main`).
+* **Automação via GitHub Actions:** Workflow customizado criado em `.github/workflows/deploy.yml` para compilar e publicar artefatos automaticamente a cada entrega validada na branch principal.
+
+### 2. Governança, Segurança e Privacidade (Cybersecurity & LGPD)
+* **Branch Protection Rules:** Bloqueio de commits diretos e proteção contra *Force Push* na branch `main`, exigindo fluxo formal de Pull Request para auditoria de código.
+* **Supply Chain Security:** Ativação do *GitHub Dependabot* para análise estática e varredura automatizada de vulnerabilidades em dependências.
+* **Conformidade com a LGPD:** Implementação de banner nativo de consentimento de cookies e aviso de coleta de dados em conformidade com a Lei Geral de Proteção de Dados.
+
+### 3. Integração de Sistemas (GitHub + Google Workspace)
+* **Banco de Dados Auxiliar:** Integração do formulário de feedback à API do Google Sheets para consolidação estruturada de respostas em tempo real.
+* **Automação de Notificações:** Planejamento de gatilhos via Webhooks (Make/Zapier) para alertas automatizados de novos leads e logs de deploy.
 
 ---
 
-## Tech Stack
+## Meu Toolkit Tecnológico
 
-| Categoria | Tecnologia |
+* **Linguagem Core:** Python (com foco em processamento científico no Spyder).
+* **Data Science:** Manipulação avançada e análise de dados com Pandas e NumPy.
+* **Web Stack & UX:** Estruturação semântica em HTML5, design responsivo com CSS3 e manipulação de estado local/DOM com JavaScript (para o Banner da LGPD).
+* **Versionamento & Governança:** Gestão avançada de repositórios com Git, utilizando boas práticas de Commits, fluxo de Pull Requests e Branching corporativo (`main` e `staging`).
+* **DevOps & CI/CD:** Automação de compilação e deploy contínuo via GitHub Actions.
+* **Segurança da Informação:** Monitoramento automatizado de vulnerabilidades e dependências com o GitHub Dependabot.
+* **Integração de Sistemas (API/No-Code):** Conexão de formulários e bancos de dados através do Google Workspace (Forms & Sheets) e automação de fluxos de trabalho via Make.com/Zapier.
+
+### Tech Stack Detalhado
+
+| Categoria | Tecnologia / Ferramenta |
 | :--- | :--- |
-| **Linguagens** | Python 3.11+, HTML5, CSS3 |
-| **Análise de Dados** | Pandas, NumPy, JSON |
-| **Ferramentas** | Spyder IDE, Jupyter Notebook, VS Code |
-| **Versionamento** | Git & GitHub Flow |
+| **Linguagens** | Python 3.11+, HTML5, CSS3, JavaScript (ES6+) |
+| **Análise de Dados** | Pandas, NumPy, JSON, Google Sheets |
+| **DevOps & CI/CD** | GitHub Actions, YAML |
+| **Segurança & Auditoria** | GitHub Dependabot, Branch Protection Rules |
+| **Ferramentas & IDEs** | Spyder IDE, Jupyter Notebook, VS Code, Git |
+| **Integrações & No-Code** | Google Forms, Make.com / Zapier (Webhooks) |
 
 ---
 
