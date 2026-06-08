@@ -640,5 +640,67 @@ if(localStorage.getItem('cookiesAceitos') === 'true') {
     document.getElementById('lgpd-cookie-banner').style.display = 'none';
 }
 </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const username = "gabriellekeiko"; 
+        const container = document.getElementById("github-api-container");
+        const url = `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`;
+
+        fetch(url)
+            .then(response => {
+                if (!response.ok) throw new Error("Erro ao carregar");
+                return response.json();
+            })
+            .then(repos => {
+                container.innerHTML = "";
+                const meusProjetos = repos.filter(repo => !repo.fork);
+
+                if (meusProjetos.length === 0) {
+                    container.innerHTML = `<p style="color: var(--muted); font-style: italic;">Nenhum repositório encontrado.</p>`;
+                    return;
+                }
+
+                const grid = document.createElement("div");
+                grid.style.display = "grid";
+                grid.style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
+                grid.style.gap = "15px";
+                grid.style.marginTop = "15px";
+
+                meusProjetos.forEach(repo => {
+                    const repoCard = document.createElement("div");
+                    repoCard.style.padding = "15px";
+                    repoCard.style.border = "1px solid var(--line)";
+                    repoCard.style.borderRadius = "8px";
+                    repoCard.style.backgroundColor = "#fff";
+                    repoCard.style.boxShadow = "0 2px 4px rgba(0,0,0,0.05)";
+                    
+                    const descricao = repo.description ? repo.description : "Sem descrição disponível.";
+                    const linguagem = repo.language ? `🏷️ ${repo.language}` : "📁 Repositório";
+
+                    repoCard.innerHTML = `
+                        <h4 style="margin: 0 0 8px 0;">
+                            <a href="${repo.html_url}" target="_blank" style="color: var(--navy); text-decoration: none; font-weight: bold;">
+                                📁 ${repo.name}
+                            </a>
+                        </h4>
+                        <p style="font-size: 0.9rem; color: var(--muted); margin: 0 0 12px 0; line-height: 1.4;">
+                            ${descricao}
+                        </p>
+                        <span style="font-size: 0.8rem; font-weight: 500; color: var(--navy); background: #f0f4f8; padding: 4px 8px; border-radius: 4px;">
+                            ${linguagem}
+                        </span>
+                    `;
+                    grid.appendChild(repoCard);
+                });
+                container.appendChild(grid);
+            })
+            .catch(error => {
+                container.innerHTML = `<p style="color: red; font-style: italic;">Erro ao carregar repositórios.</p>`;
+            });
+    });
+    </script>
+
+</body>
+</html>
 </body>
 </html>
