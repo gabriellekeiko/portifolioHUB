@@ -18,15 +18,18 @@ Este repositório foi construído para demonstrar competências em:
 
 ## Arquitetura do Repositório
 
-O repositório está organizado em módulos de competência para facilitar a navegação:
+O repositório está organizado em módulos de competência e governança para facilitar a navegação:
 
-### [Ecossistema de Projetos](./projetos)
-Nesta seção, centralizo todas as soluções práticas desenvolvidas. Aqui, o foco sai da teoria e entra na execução. Você encontrará desde scripts de automação até pipelines de dados complexos. Cada subpasta dentro deste diretório contém sua própria documentação técnica detalhada, explicando o "porquê" de cada linha de código.
+### [Automação e Integração Contínua (CI/CD)](./.github/workflows)
+Este módulo centraliza os fluxos de trabalho automatizados do repositório. Utilizando o GitHub Actions, as configurações contidas aqui garantem que os testes, deploys e validações de código ocorram de forma automática e padronizada a cada atualização.
+
+### [Estratégia e Governança](./PLANO%20DE%20IMPLANTA%C3%87%C3%83O,%20GOVERNAN%C3%87A%20E%20ARQUITETURA%20DE%20SOFTWARE_%20ECOSSISTEMA%20PORTFOLIOHUB.pdf)
+O alicerce estratégico do projeto. Este documento detalha o **Plano de Implantação, Governança e Arquitetura de Software** do ecossistema PortfolioHub, estabelecendo as diretrizes técnicas, padrões de qualidade e a visão de longo prazo para a sustentabilidade da plataforma.
 
 ### [Certificações e Conquistas](./certificados_diplomas)
 Acredito na aprendizagem contínua (*Lifelong Learning*). Esta pasta reúne as evidências formais da minha evolução, contendo certificados de cursos complementares, workshops e maratonas de programação que moldaram meu conhecimento atual.
 
-### [Apresentações e Soft Skills](./Portifólio_profissional(slides).pdf)
+### [Apresentações e Soft Skills](./Portif%C3%B3lio_profissional(slides).pdf)
 Um cientista de dados precisa saber contar histórias. Aqui, disponibilizo os **Slides de Habilidades** e apresentações executivas que utilizei para defender meus projetos. Estes materiais demonstram minha capacidade de traduzir termos técnicos para uma linguagem de negócios e impacto.
 
 ### [Interface e Experiência (HTML/CSS)](./index.html)
